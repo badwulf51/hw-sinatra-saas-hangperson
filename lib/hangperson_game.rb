@@ -20,4 +20,10 @@ class HangpersonGame
     }
   end
 
+  def guess(letter)
+    @guesses << letter
+
+    
+  end
+
 end
