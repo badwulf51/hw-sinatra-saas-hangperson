@@ -29,7 +29,7 @@ describe HangpersonGame do
         expect(@game.guesses).to eq('a')
         expect(@game.wrong_guesses).to eq('')
       end
-      it 'returns true', :pending => true do
+      it 'returns true' do
         expect(@valid).not_to be false
       end
     end

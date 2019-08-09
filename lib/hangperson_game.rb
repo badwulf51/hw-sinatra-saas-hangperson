@@ -23,7 +23,7 @@ class HangpersonGame
   def guess(letter)
     @guesses << letter
 
-    
+    return true
   end
 
 end
