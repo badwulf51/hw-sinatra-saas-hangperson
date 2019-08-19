@@ -42,7 +42,7 @@ class HangpersonApp < Sinatra::Base
     ### YOUR CODE HERE ###
     begin
       if !@game.guess(letter)
-        flash[:message] = "The selection is an invalid character"
+        flash[:message] = "You have already used that letter."
       end
       if @game.check_win_or_lose == :win
         redirect '/win'
@@ -52,7 +52,7 @@ class HangpersonApp < Sinatra::Base
         redirect '/show'
       end
     rescue ArgumentError
-      flash[:message] = "Please only use a-z"
+      flash[:message] = "Invalid guess."
       redirect '/show'
     end
     redirect '/show'

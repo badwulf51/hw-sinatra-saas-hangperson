@@ -1,1 +1,1 @@
-http://secure-bayou-84136.herokuapp.com/new
+secure-bayou-84136.herokuapp.com
